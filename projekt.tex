@@ -1,0 +1,111 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} 
+\usepackage[MeX]{polski} 
+\usepackage{times}
+\newtheorem{funkcja}{Twierdzenie}
+\newtheorem{funkcja2}{Twierdzenie}
+\title{LaTeX?}
+\author{Jimmy Wales}
+\usepackage{graphicx} 
+\begin{document}
+\maketitle
+
+\begin{figure}
+\centering
+\includegraphics[width=5cm]k
+\caption{Logo LaTeX}
+\label{fig:obrazek k}
+\end{figure}
+
+LaTeX – oprogramowanie do zautomatyzowanego składu tekstu, a także związany z nim język znaczników, służący do formatowania dokumentów tekstowych i tekstowo-graficznych (na przykład: broszur, artykułów, książek, plakatów, prezentacji, a nawet stron HTML). Jego logo stylizowane jest z użyciem samego LaTeX-a.
+
+W istocie LaTeX nie jest samodzielnym środowiskiem programistycznym. Jest to jedynie zestaw makr stanowiących nadbudowę dla systemu składu TeX, automatyzujących wiele czynności związanych z procesem poprawnego składania tekstu. Jednakowoż, ze względu na dużą popularność LaTeX-a (w porównaniu z czystym TeX-em) nazwy te bywają używane zamiennie.
+\cite{lamport94}
+Tworzenie tekstu w LaTeX-u opiera się na zasadzie WYSIWYM (What You See Is What You Mean - To co widzisz jest tym, o czym myślisz). Od zasady WYSIWYG odróżnia go to, że autor tekstu określa jedynie logiczną strukturę dokumentu (tzn. zaznacza, gdzie zaczyna się rozdział, co jest przypisem itp.), natomiast samym graficznym "ułożeniem" tekstu na stronie zajmuje się TeX, zwalniając tym samym użytkownika z tego zadania.
+\cite{tobias}
+W sposób automatyczny tworzone są:
+\begin{itemize}
+\item spisy treści, ilustracji oraz tabel,
+\item numerowanie i referencje do rozdziałów i podrozdziałów,
+\item numerowanie i referencje elementów takich jak wzory i rysunki,
+\item skorowidze,
+\end{itemize}
+
+\begin{quote}
+Jesteśmy tym, co w swoim życiu powtarzamy. Doskonałość nie jest
+jednorazowym aktem, lecz nawykiem.
+\end{quote}
+
+Arystoteles (gr. Ἀριστοτέλης, Aristotelēs, ur. 384 p.n.e., zm. 7 marca 322 p.n.e.) – jeden z trzech, obok Platona i Sokratesa najsławniejszych filozofów greckich. Stworzył opozycyjny do platonizmu i równie spójny system filozoficzny, który bardzo silnie działał na filozofię i naukę europejską, a jego chrześcijańska odmiana zwana tomizmem była od XIII w. i jest do dziś oficjalną filozofią Kościoła Katolickiego. Założyciel szkoły filozoficznej znajdującej się w Ogrodach Likejonu (od nazwy sąsiadującej z nimi świątyni Appolina Likejosa), co stało się źródłosłowem słowa "Liceum". Arystoteles położył ogromne zasługi w astronomii, fizyce, biologii i logice, jednak część jego teorii astronomicznych, fizycznych i biologicznych okazała się błędna. Zbyt rygorystyczna akceptacja tych teorii przez przedstawicieli filozofii scholastycznej stała się jedną z przyczyn opóźnienia rozwoju tych nauk w Europie, ale z drugiej strony myśl Arystotelesa zainspirowała do poszukiwania nowych hipotez w kosmologii i fizyce przez krytycznych arystotelików już w XIII i XIV wieku (zwłaszcza tzw. via moderna w filozofii).
+
+\begin{funkcja}
+\label{twr:1}
+Zawartość pierwszego twierdzenia.
+\end{funkcja}
+\begin{equation}
+\label{eq:funkcjaf}
+f(x) = \left\lbrace
+\begin{array}{rcl}
+-x^2 & \text{dla} & x < 0,\\
+\sqrt{x} + \sin x & \text{dla} & x > 0.
+\end{array}
+\right.
+\end{equation}
+
+\begin{funkcja2}
+\label{twr:2}
+Zawartość drugiego twierdzenia.
+\end{funkcja2}
+\begin{equation}
+\frac{x + y}{x + 1}
+\end{equation}
+
+$$\lim_{n \to \infty} \frac{1}{n}=0$$
+
+\begin{eqnarray}
+\label{eq:costam}
+a^ 2\\
+a_2\\
+x^ ab\\
+x^ {ab}\nonumber\\
+a^ {a^ 2}\\
+x_{t=0}\\
+x_{a+b}={c+d}\\
+x^ {c+d}={a+b}\\
+\end{eqnarray}
+
+\begin{thebibliography}{9}
+\bibitem{lamport94}
+ Leslie Lamport,
+ \emph{\LaTeX: A Document Preparation System}.
+ Addison Wesley, Massachusetts,
+ 2nd Edition,
+ 1994.
+\bibitem{tobias}
+ Tobias Oetiker,
+ \emph{\ Nie za krótkie wprowadzenie do systemu LaTeX}.
+ na Ogólnej Licencji Publicznej GNU
+\end{thebibliography}
+
+\begin{figure}
+\centering
+\includegraphics[width=3cm]h
+\caption{Wesoła minka}
+\label{fig:obrazek h}
+\end{figure}
+
+\begin{array}{|l|c|r|}
+\hline
+left1 & center1 & right1\\
+\hline
+item11 & item12  & item13\\
+\hline
+item21 & item22  & item23\\
+\hline
+item31 & item32  & item33\\
+\hline
+\end{array}
+
+\end{document}
